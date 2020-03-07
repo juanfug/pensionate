@@ -1,3 +1,4 @@
+@extends('admin.template.main')
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -9,6 +10,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="icon" href="img/pensionate (1).ico">
 
         <!-- Styles -->
         <style>
@@ -65,6 +67,13 @@
         </style>
     </head>
     <body>
+        <header>
+            <div class="conteiner-header">
+                <div class="logo-title">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </header>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -88,13 +97,14 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Pensiones</a>
-                    <a href="https://laracasts.com">Apartamentos</a>
-                    <a href="https://laravel-news.com">Casas</a>
-                    <a href="https://forge.laravel.com">Vacaciones y festivos</a>
-                    <a href="https://github.com/laravel/laravel">Inmuebles en venta</a>
+                    <a href="">Pensiones</a>
+                    <a href="">Apartamentos</a>
+                    <a href="">Casas</a>
+                    <a href="">Vacaciones y festivos</a>
+                    <a href="">Inmuebles en venta</a>
                 </div>
             </div>
         </div>
     </body>
 </html>
+https://www.youtube.com/watch?v=MNr5QqaDg4I
