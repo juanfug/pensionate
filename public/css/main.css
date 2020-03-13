@@ -61,7 +61,7 @@ header{
 	width: 100%;
 	height:500px;
 	position: relative;
-	background-image: url(../img/montería.jpeg);
+	background-image: url(../img/avprimera.jpeg);
 	background-size: 100%;
 	animation: movimiento 10s infinite linear alternate;
 }
