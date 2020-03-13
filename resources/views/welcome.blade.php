@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <meta name="viewport" content="width=device-width, user-scalable-no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
         <title>Pensionate Colombia</title>
 
         <!-- Fonts -->
@@ -74,8 +74,7 @@
             <div class="conteiner-header">
                 <div class="logo-title">
                     <img src="img/logo.PNG" alt="">
-                    <h5><a href="http://127.0.0.1:8000/">Pensionate Colombia</a></h5>
-                    
+                    <h6><a href="http://127.0.0.1:8000/">PensionateColombia</a></h6>    
                 </div>
 
             </div>
@@ -126,6 +125,38 @@
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae natus mollitia sed quis, vel numquam, dolore ut dignissimos consectetur eaque quia totam. Maiores nobis tempore atque? Ducimus voluptas corporis pariatur nobis sed sequi, excepturi veritatis aliquam ad! Facere animi earum mollitia, non dolor aliquam necessitatibus beatae eaque, delectus ducimus totam.</p>
             </article>
+        </main>
+        <main>
+            <h1>
+                Nuestros Servicios
+            </h1>
+            <hr>
+            <div class="container">
+                <div class="card1">
+                    <img src="img/barranquillapension.jpg" alt="">
+                    <h5>Pensiones</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, cumque.</p>
+                    <a href="">leer mas</a>
+                </div>
+                    <div class="card1">
+                    <img src="img/coveñas.png" alt="">
+                    <h5>Vacaciones</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, cumque.</p>
+                    <a href="">leer mas</a>
+                </div>
+                    <div class="card1">
+                    <img src="img/inmueble.PNG" alt="">
+                    <h5>Inmuebles</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, cumque.</p>
+                    <a href="">leer mas</a>
+                </div>
+                    <div class="card1">
+                    <img src="img/apartamento.PNG" alt="">
+                    <h5>Apartamentos</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, cumque.</p>
+                    <a href="">leer mas</a>
+                </div>
+            </div>
         </main>
     </body>
 </html>
