@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNotification extends Migration
+class CreateNotifications extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateNotification extends Migration
      */
     public function up()
     {
-            Schema::create('notification', function (Blueprint $table) {
+            Schema::create('notifications', function (Blueprint $table) {
             $table->increments('id_no');
             $table->timestamps();
             $table->string('imagen');
@@ -22,24 +22,24 @@ class CreateNotification extends Migration
             $table->string('calificacion');
 
             $table->integer('mensaje_id')->unsigned();
-            $table->foreign('mensaje_id')->references('id_me')->on('mensaje')->onDelete('cascade');
+            $table->foreign('mensaje_id')->references('id_me')->on('mensajes')->onDelete('cascade');
 
             $table->integer('user_information_id')->unsigned();
 
-            $table->foreign('user_information_id')->references('id')->on('user_information')->onDelete('cascade');
+            $table->foreign('user_information_id')->references('id')->on('users_information')->onDelete('cascade');
 
             $table->integer('user_id')->unsigned();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->integer('rol_id')->unsigned();
 
-            $table->foreign('rol_id')->references('idr')->on('rol')->onDelete('cascade');
+            $table->foreign('rol_id')->references('idr')->on('roles')->onDelete('cascade');
             $table->integer('rol_user_id')->unsigned();
 
-            $table->foreign('rol_user_id')->references('id_ru')->on('rol_user')->onDelete('cascade');
+            $table->foreign('rol_user_id')->references('id_ru')->on('roles_user')->onDelete('cascade');
              $table->integer('publication_id')->unsigned();
 
-            $table->foreign('publication_id')->references('id_pu')->on('publication')->onDelete('cascade');
+            $table->foreign('publication_id')->references('id_pu')->on('publications')->onDelete('cascade');
 
 
             });
@@ -52,5 +52,5 @@ class CreateNotification extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('notification');    }
+        Schema::dropIfExists('notifications');    }
 }

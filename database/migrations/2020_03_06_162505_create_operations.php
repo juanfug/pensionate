@@ -21,7 +21,7 @@ class CreateOperations extends Migration
 
 
             $table->integer('rol_ope_id')->unsigned();
-            $table->foreign('rol_ope_id')->references('idrop')->on('rol_operations')->onDelete('cascade');
+            $table->foreign('rol_ope_id')->references('idrop')->on('roles_operations')->onDelete('cascade');
 
             $table->integer('user_id')->unsigned();
 
