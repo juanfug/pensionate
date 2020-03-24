@@ -1,4 +1,7 @@
 @extends('admin.template.main')
+@section('title')
+    Inicio
+@endsection
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -6,14 +9,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, user-scalable-no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-        <title>Pensionate Colombia</title>
+        
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="icon" href="img/pensionate (1).ico">
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&display=swap" rel="stylesheet">
-
+        
         <!-- Styles -->
         <style>
             html, body {
@@ -70,14 +73,16 @@
     </head>
     <body>
         <header>
-
+            <nav class="navbar navbar-dark bg-primary">
             <div class="conteiner-header">
                 <div class="logo-title">
                     <img src="img/logo.PNG" alt="">
                     <h6><a href="http://127.0.0.1:8000/">PensionateColombia</a></h6>    
                 </div>
 
-            </div>
+            </div> 
+            </nav>
+
 
                         @if (Route::has('login'))
                 <div class="top-right links">
